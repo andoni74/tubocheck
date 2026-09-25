@@ -4,6 +4,7 @@
         android:label="TuboCheck"
         android:allowBackup="true"
         android:supportsRtl="true">
+        android:icon="@drawable/tubocheck_cover"
         <activity android:name=".MainActivity" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
