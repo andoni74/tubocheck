@@ -119,11 +119,11 @@ class MainActivity : ComponentActivity() {
                     val options = ScanOptions().apply {
     setPrompt("Apunta al código del tubo")
     setBeepEnabled(true)
+    setCameraId(0)
     setOrientationLocked(true)
     setDesiredBarcodeFormats(
-        ScanOptions.DATA_MATRIX,
-        ScanOptions.QR_CODE
-    )
+    ScanOptions.DATA_MATRIX
+)
 }
                     
 
