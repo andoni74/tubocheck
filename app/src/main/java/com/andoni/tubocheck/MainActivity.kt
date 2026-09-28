@@ -117,9 +117,13 @@ class MainActivity : ComponentActivity() {
                     qrCallback = callback
 
                     val options = ScanOptions().apply {
-    setPrompt("Apunta al código QR del tubo")
+    setPrompt("Apunta al código del tubo")
     setBeepEnabled(true)
     setOrientationLocked(true)
+    setDesiredBarcodeFormats(
+        ScanOptions.DATA_MATRIX,
+        ScanOptions.QR_CODE
+    )
 }
                     
 
